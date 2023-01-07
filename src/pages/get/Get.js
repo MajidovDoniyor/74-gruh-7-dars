@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { Api } from "../../api/api";
 
 const Get = () => {
   const [state, setstate] = useState([]);
   const [page, setpage] = useState(1);
 
   useEffect(() => {
-    fetch(`http://localhost:8888/employees?_limit=2&_page=${page}`)
+    Api.getPagination(page)
       .then((res) => res.json())
       .then((res) => setstate(res));
   }, [page]);

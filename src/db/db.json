@@ -1,24 +1,24 @@
 {
-   "employees": [
-     {
-       "id": 1,
-       "name": "Pankaj",
-       "job": "react developer"
-     },
-     {
-       "id": 2,
-       "name": "kkk",
-       "job": "kiuh developer"
-     },
-     {
-       "id": 3,
-       "name": "ef3",
-       "job": "vue developer"
-     },
-     {
-       "id": 4,
-       "name": "34ef",
-       "job": "vue developer"
-     }
-   ]
- }
+  "employees": [
+    {
+      "id": 1,
+      "name": "Pankaj",
+      "email": "react developer"
+    },
+    {
+      "id": 2,
+      "name": "doniyor",
+      "email": "react"
+    },
+    {
+      "id": 3,
+      "name": "74",
+      "email": "veb"
+    },
+    {
+      "id": 4,
+      "name": "44444",
+      "email": "vue 444444"
+    }
+  ]
+}
