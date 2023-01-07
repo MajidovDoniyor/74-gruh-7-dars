@@ -1,7 +1,6 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { Api, url } from "../../api/api";
+import { Api } from "../../api/api";
 
 const Edit = () => {
   const { id } = useParams();
@@ -19,8 +18,7 @@ const Edit = () => {
   }, []);
   const editData = () => {
     const data = { id: id, name: name, email: email };
-    axios
-      .put(`${url}employees/${id}`, data)
+    Api.getCrudIdEdit(id, data)
       .then((res) => {
         navigate("/");
       })
